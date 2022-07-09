@@ -27,7 +27,7 @@ const App = () => {
 
             <Solutions />
 
-            <Partners />
+            {/* <Partners /> */}
 
             <Contact />
 
