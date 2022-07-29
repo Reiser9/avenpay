@@ -56,7 +56,8 @@ const Header = () => {
                     <div className="header__inner w100 df aic jcsb">
                         <div className="header__wrapper df aic">
                             <Link to="/" className="header__logo df">
-                                <img src="./assets/img/logo.svg" alt="logo" className="img" />
+                                <img src="./assets/img/logo.svg" alt="logo" className="img light" />
+                                <img src="./assets/img/logo-dark.svg" alt="logo" className="img dark" />
                             </Link>
 
                             <nav className="header__nav df aic">
@@ -79,7 +80,7 @@ const Header = () => {
                         </div>
 
                         <div className="header__wrapper df aic">
-                            <button className="button change__mode df aic jcc">
+                            <button className="button change__mode df aic jcc" onClick={changeTheme}>
                                 <img src="./assets/img/moon.svg" alt="moon" className="change__mode--icon" />
                             </button>
 
@@ -91,8 +92,15 @@ const Header = () => {
                                 <span>Open Account</span>
                             </button>
 
-                            {menuOpen ? <img src="./assets/img/cross.svg" alt="cross" className="cross" onClick={toggleMenu} />
-                            : <img src="./assets/img/menu.svg" alt="menu" className="menu" onClick={toggleMenu} />}
+                            {menuOpen
+                            ? <div className="menu__inner">
+                                <img src="./assets/img/cross.svg" alt="cross" className="cross light" onClick={toggleMenu} />
+                                <img src="./assets/img/cross-dark.svg" alt="cross" className="cross dark" onClick={toggleMenu} />
+                            </div>
+                            : <div className="menu__inner">
+                                <img src="./assets/img/menu.svg" alt="menu" className="menu light" onClick={toggleMenu} />
+                                <img src="./assets/img/menu-dark.svg" alt="menu" className="menu dark" onClick={toggleMenu} />
+                            </div>}
                         </div>
                     </div>
                 </div>
@@ -185,7 +193,7 @@ const Header = () => {
                             </a>
                         </div>
 
-                        <button className='button mobile__darkmode w100 df aic jcsb'>
+                        <button className='button mobile__darkmode w100 df aic jcsb' onClick={changeTheme}>
                             <span className='df aic'>
                                 <img src='./assets/img/moon.svg' alt='img' className='mobile__menu--icon' />
 

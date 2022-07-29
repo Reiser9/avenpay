@@ -3,7 +3,8 @@ import React from 'react';
 const Main = () => {
     return(
         <section className="main posr">
-            <img src="./assets/img/main-bg.jpg" alt="bg" className="main__bg pen w100" />
+            <img src="./assets/img/main-bg.png" alt="bg" className="main__bg pen w100 light" />
+            <img src="./assets/img/main-bg-dark.jpg" alt="bg" className="main__bg pen w100 dark" />
 
             <div className="container">
                 <div className="main__inner w100 df aic jcsb">

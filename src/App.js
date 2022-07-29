@@ -8,7 +8,7 @@ import About from './components/About';
 import Our from './components/Our';
 import Open from './components/Open';
 import Solutions from './components/Solutions';
-import Partners from './components/Partners';
+// import Partners from './components/Partners';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
