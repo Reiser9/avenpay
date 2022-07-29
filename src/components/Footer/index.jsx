@@ -8,7 +8,8 @@ const Footer = () => {
                 <div className="footer__inner w100 df aic jcsb">
                     <div className="footer__wrapper df aic">
                         <Link to="/" className="header__logo df">
-                            <img src="./assets/img/logo.svg" alt="logo" className="img" />
+                            <img src="./assets/img/logo.svg" alt="logo" className="img light" />
+                            <img src="./assets/img/logo-dark.svg" alt="logo" className="img dark" />
                         </Link>
 
                         <a href="https://google.com" className="footer__link">
